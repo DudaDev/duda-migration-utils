@@ -13,7 +13,7 @@ npm install @dudadev/duda-migration-utils
 Usage example:
 
 ```js
-const { domainUrl } = require('@dudadev/duda-migration-utils');
+const { getDomainUrl } = require('@dudadev/duda-migration-utils');
 
 const domainUrl = await getDomainUrl({ zipModifier });
 ```
