@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 
-async function getDomainUrl({ zipModifier }) {
+async function getDomainUrl(zipModifier) {
   let domainUrl;
   await zipModifier.modifyFiles(/index.html$/, async (content) => {
     const pageUrlRegex = content.match(/<!-- Mirrored from (.*) by HTTrack/);
@@ -15,7 +15,7 @@ async function getDomainUrl({ zipModifier }) {
   return domainUrl;
 }
 
-async function addImages({ zipModifier, content, images, baseUrl }) {
+async function addImages(zipModifier, { content, images, baseUrl }) {
   if (!images) {
     return;
   }
@@ -64,5 +64,6 @@ async function addNewFile(
 
 module.exports = {
   getDomainUrl,
-  addImages
+  addImages,
+  addNewFile
 };
