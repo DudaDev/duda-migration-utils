@@ -15,7 +15,7 @@ async function getDomainUrl(zipModifier) {
   return domainUrl;
 }
 
-async function addImages(zipModifier, { content, images, baseUrl }) {
+async function addImages(zipModifier, { content, images, baseUrl } = {}) {
   if (!images) {
     return;
   }
