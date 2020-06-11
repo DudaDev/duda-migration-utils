@@ -55,7 +55,7 @@ async function addNewFile(
   await newTxtModifier.addRecord(
     {
       localfile: localfile || path,
-      URL: URL + uuidv4(),
+      URL,
       ...restOfFields
     },
     ''
