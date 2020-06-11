@@ -8,7 +8,7 @@ npm install @dudadev/duda-migration-utils
 
 ## API
 
-## `getDomainUrl`
+`getDomainUrl`
 
 Usage example:
 
@@ -18,7 +18,7 @@ const { getDomainUrl } = require('@dudadev/duda-migration-utils');
 const domainUrl = await getDomainUrl(zipModifier);
 ```
 
-## `addImages`
+`addImages`
 
 Usage example:
 
@@ -37,7 +37,7 @@ await zipModifier.modifyFiles(/\.html$/, async (content) => {
 });
 ```
 
-## `addNewFile`
+`addNewFile`
 
 Usage example:
 
