@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/DudaDev/duda-migration-utils#readme",
   "dependencies": {
-    "uuid": "^8.1.0"
+    "uuid": "^14.0.0"
   }
 }
